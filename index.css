@@ -1,0 +1,92 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--color-text);
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-family: 'Cormorant infant', sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+.hero-content .btn-gradient {
+  color: var(--color-text);
+  text-decoration: none;
+  background: linear-gradient(
+    45deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  padding: 10px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.hero-content .btn-gradient:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 10px 20px rgba(125, 249, 255, 0.4);
+}
+
+.hero-content .anim:nth-child(1) {
+  animation-delay: 0.6s;
+}
+
+.hero-content .anim:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.hero-content .anim:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+@keyframes dropIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vertical {
+  position: absolute;
+  height: 100vh;
+  width: 100px;
+  animation-delay: 1.2s;
+}
+
+.vertical h1 {
+  font-size: 80px;
+  white-space: nowrap;
+  letter-spacing: 5px;
+  background: linear-gradient(
+    45deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: 'Cormorant Infant', serif;
+}
