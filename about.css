@@ -138,9 +138,15 @@ section {
 .container a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: clamp(2rem, 8vw, 80px);
-  letter-spacing: 5px;
+  font-size: clamp(2.7rem, 8vw, 80px);
+  letter-spacing: 2px;
   max-width: 800px;
+}
+
+.about li:nth-child(1) {
+  color: black;
+  font-family: Cormorant, 'sans-serif';
+  font-weight: bold;
 }
 
 .projects .content p {
@@ -186,12 +192,12 @@ section {
   color: var(--color-text);
   list-style: none;
   margin-top: 30px;
-  font-size: clamp(16px, 1.8vw, 25px);
+  font-size: clamp(1rem, 1.8vw, 25px);
   max-width: 70%;
 }
 
 .about li:nth-child(1) {
-  font-size: clamp(14px, 1.6vw, 23px);
+  font-size: clamp(1.1rem, 1.6vw, 2rem);
 }
 
 .about li:nth-child(3) {
@@ -290,12 +296,11 @@ section {
     padding-top: 150px;
   }
 
-  .contact .content .upper p,
-  .about .content p {
-    margin-left: 40px;
+  .contact p {
+    margin-left: 80px;
   }
 
-  .contact .right,
+  .project p .contact .right,
   .about .right {
     display: none;
   }
