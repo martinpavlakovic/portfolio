@@ -1,0 +1,164 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  gap: 100px;
+}
+
+section .img {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+section .img img {
+  width: clamp(250px, 30vw, 400px);
+  height: auto;
+  box-shadow: 0 10px 20px rgba(125, 249, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+section .img img:hover {
+  transform: scale(1.1);
+}
+
+.vertical-line {
+  width: 1px;
+  height: 600px;
+  display: block;
+  background-color: white;
+}
+
+.content {
+  margin-left: 20px;
+  max-width: clamp(200px, 20vw, 600px);
+}
+
+.content p {
+  color: var(--color-text);
+  margin: clamp(20px, 4vw, 60px);
+  font-size: clamp(16px, 1.2vw, 20px);
+}
+
+.link {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: bold;
+  font-size: clamp(20px, 2.5vw, 35px);
+  margin: clamp(20px, 4vw, 60px);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(16px, 2vw, 30px);
+  font-weight: bold;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    var(--color-background),
+    var(--color-background)
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition:
+    background-size 0.6s ease,
+    color 0.6s ease;
+}
+
+.link:hover {
+  background-size: 100% 100%;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1750px) {
+  .auagency {
+    flex-direction: column;
+    padding-top: 600px;
+  }
+
+  .stockup {
+    padding-top: 800px;
+  }
+
+  .portfolio {
+    padding-top: 900px;
+  }
+
+  body {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    padding-top: 600px;
+  }
+
+  section img {
+    margin-left: 20px;
+  }
+
+  .vertical-line {
+    height: 1px;
+    width: clamp(300px, 71vw, 500px);
+    margin-left: 20px;
+  }
+
+  .gamefinder {
+    max-width: clamp(500px, 20vw, 700px);
+  }
+}
+
+@media (max-width: 700px) {
+  .vertical-line {
+    width: clamp(300px, 71vw, 500px);
+  }
+
+  .content {
+    margin-left: 40px;
+  }
+
+  .content {
+    padding-bottom: 60px;
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 60vw;
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 28px;
+  color: var(--color-text);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  background: none;
+  border: none;
+}

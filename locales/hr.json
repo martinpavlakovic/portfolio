@@ -1,0 +1,60 @@
+{
+  "works": "PROJEKTI",
+  "about": "O MENI",
+  "contact": "KONTAKT",
+
+  "creativeRole": "Kreativni developer",
+  "roleDescription": "Kreiram digitalna iskustva s kodom i bojama.",
+  "viewProjects": "Pogledaj Projekte",
+
+  "aboutText": "Hej!",
+  "aboutBulletOne": "Hej, ja sam Martin",
+  "aboutBulletTwo": "Student sam treće godine informatike koji previše vremena provodi igrajući videoigre",
+  "aboutBulletThree": "I taman dovoljno vremena da tu strast pretvori u čiste, kreativne frontende!",
+  "projectsText": "Ovo su moji projekti",
+  "projectsLink": "Pogledajte ih!",
+  "contactFormText": "Slobodno me kontaktiraj preko",
+  "contactFormLink": "Obrasca",
+
+  "gamefinderTitle": "GameFinder",
+  "gamefinderDesc": "Moj prvi pokušaj pravljenja web aplikacija",
+
+  "auagencyTitle": "AU-Agency",
+  "auagencyDesc": "Prvi projekt na fakultetu fokusiran na UI",
+
+  "stockupTitle": "StockUp",
+  "stockupDesc": "Prvi projekt s React-om",
+
+  "portfolioTitle": "Portfolio",
+  "portfolioDescription": "Pokušaj sa portfoliom",
+  
+  "getInTouch": "Kontaktiraj Me",
+  "nameLabel": "Tvoje Ime",
+  "emailLabel": "Tvoj Email",
+  "descriptionLabel": "Opis",
+  "sendMessage": "Pošalji Poruku",
+  
+  "contactPageTitle": "KONTAKT •",
+  "welcome": "DOBRODOŠLI U MOJ WEB PORTFOLIO •",
+  "aboutPageTitle": "O MENI •",
+  "worksPageTitle": "PROJEKTI •",
+  "gamefinderPageTitle": "GAME FINDER •",
+  "auagencyPageTitle": "AU-AGENCY •",
+  "stockupPageTitle": "STOCKUP •",
+
+  "gameFinderOne": "Ovo je bio moj prvi projekt ikad. Prije ovoga sam naučio neke osnove HTML-a, CSS-a i JavaScripta jer sam mislio kako je cool izrađivati ​​web aplikacije i onda sam se odmah htio baciti na svoj prvi projekt.",
+  "gameFinderTwo": "Također mi je to bio prvi put da sam išta naučio o webu, pa je bilo jako teško shvatiti sve, ali vidio sam koliko servisa poput Google Firebasea (koji sam koristio za ovaj projekt) postoji pa mi je to malo olakšalo stvari.",
+  "gameFinderThree": "Sve u svemu, zadovoljan sam kako je ispalo, posebno za moj prvi projekt.",
+
+  "auAgencyOne": "Ovaj mali rad je bio više UI vježba. Nisam puno znao o responzivnom dizajnu, u GameFinder projektu sam samo sve postavio na fiksnu širinu, a zatim sam napravio puno medijskih upita kako bih ispravio druge veličine zaslona.",
+  "auAgencyTwo": "To je također bilo moje prvo iskustvo s Bootstrapom i definitivno je bilo zabavno vidjeti koliko ga je jednostavno koristiti i bio sam uzbuđen zbog onoga što će drugi ljudi napraviti jer sam mislio da je Bootstrap stvarno super.",
+  "auAgencyThree": "Ovaj projekt nije bio nešto veliko, samo sam htio napraviti informativnu web stranicu o svojoj omiljenoj zemlji.",
+
+  "stockUpOne": "U ovom trenutku sam se već dublje bavio frontendom. Počeo sam učiti React i ovo je bio moj pokušaj.",
+  "stockUpTwo": "Imao sam stvarno cool ideju za projekt. Mislio sam da je stvarno zamorno posjećivati ​​svaku stranicu neke trgovine tražeći popuste na određene sastojke i slično, pa sam pomislio da bih mogao napraviti web aplikaciju koja bi imala sve sastojke i potrepštine iz svake trgovine. Također bi bilo cool staviti svaki katalog iz svake trgovine na tu stranicu i tako da korisnik može kliknuti na bilo koji proizvod i odmah ga staviti na svoj popis za kupovinu, čime bi se uklonila potreba za ručnim pisanjem svega.",
+  "stockUpThree": "Bila je to stvarno cool ideja, ali malo teška za izvesti, ali mi se svakako svidjelo sve što sam naučio o Reactu i znao sam da se definitivno želim držati tog okvira",
+
+  "portfolioOne": "Portfolio je definitivno bio jedan od mojih kreativnijih projekata. Htio sam testirati koliko daleko mogu ići s CSS-om i njegovim animacijama, prijelazima i slično, i definitivno vidim ograničenja",
+  "portfolioTwo": "Nakon ovog projekta potpuno sam razumio responzivni dizajn i što raditi, a što ne raditi, kako pravilno strukturirati CSS i iskreno nešto naprednijeg CSS-a.",
+  "portfolioThree": "CSS je odličan alat za bilo koji projekt, ali mislim da su za veće projekte alternative puno bolje, ne samo za korisničko sučelje već i za kodiranje, ispravljanje pogrešaka i strukturu općenito."
+}

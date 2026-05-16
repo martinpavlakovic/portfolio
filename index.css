@@ -1,3 +1,5 @@
+/* Homepage */
+
 .hero {
   height: 100vh;
   display: flex;
@@ -15,28 +17,17 @@
 }
 
 .hero-content h1 {
-  font-size: 4rem;
+  font-size: clamp(3rem, 8.3vw, 4rem);
   font-family: 'Cormorant infant', sans-serif;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
 .hero-content .btn-gradient {
-  color: var(--color-text);
-  text-decoration: none;
-  background: linear-gradient(
-    45deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
   padding: 10px 30px;
   border-radius: 50px;
-  display: inline-block;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
 .hero-content .btn-gradient:hover {
@@ -56,37 +47,53 @@
   animation-delay: 1.2s;
 }
 
-@keyframes dropIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@media (max-width: 768px) {
+  .hero .hero-content p {
+    max-width: 200px;
   }
 }
 
-.vertical {
-  position: absolute;
-  height: 100vh;
-  width: 100px;
+/* Language selectors */
+
+.lngButton {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(125, 249, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  padding: clamp(16px, 3.1vw, 24px);
+  cursor: pointer;
+  transition: transform 0.3s;
+  color: var(--color-text);
+}
+
+.enButton {
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  z-index: 1000;
+  animation-delay: 0.9s;
+}
+
+.hrButton {
+  position: fixed;
+  bottom: 50px;
+  right: 200px;
+  z-index: 1000;
   animation-delay: 1.2s;
 }
 
-.vertical h1 {
-  font-size: 80px;
-  white-space: nowrap;
-  letter-spacing: 5px;
-  background: linear-gradient(
-    45deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  font-family: 'Cormorant Infant', serif;
+.lngButton:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+  .enButton {
+    bottom: 25px;
+    right: 25px;
+  }
+
+  .hrButton {
+    right: 100px;
+    bottom: 25px;
+  }
 }

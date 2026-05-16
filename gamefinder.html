@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./worksDetail.css" />
     <link rel="icon" type="image/png" href="./icons/cocosignIcon.png" />
-    <title>mp | Contact</title>
+
+    <title>mp | GameFinder</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -42,49 +43,37 @@
     <!-- Vertical text -->
     <div class="vertical anim">
       <div class="scroll-wrapper">
-        <h1 data-i18n="contactPageTitle">CONTACT &#x2022;</h1>
+        <h1 data-i18n="gamefinderPageTitle">GAME FINDER &#x2022;</h1>
       </div>
     </div>
-
-    <!-- Form -->
-    <section class="contact-container">
-      <form class="contact-form anim" id="contact-form">
-        <h2 class="group anim" data-i18n="getInTouch"></h2>
-        <div class="group anim">
-          <label data-i18n="nameLabel"></label>
-          <input
-            name="Full Name"
-            type="text"
-            placeholder="Example: John Doe"
-            class="" />
-        </div>
-        <div class="group anim">
-          <label for="email" data-i18n="emailLabel"></label>
-          <input
-            type="email"
-            name="Email"
-            id="email"
-            placeholder="Example: johndoe@gmail.com"
-            class="" />
-        </div>
-        <div class="group anim">
-          <label data-i18n="descriptionLabel"></label>
-          <textarea
-            name="Message"
-            placeholder="Example: Please specify your request."
-            class=""></textarea>
-        </div>
-        <div class="group anim">
-          <button
-            type="submit"
-            class="btn-gradient"
-            id="submit-button"
-            data-i18n="sendMessage"></button>
-        </div>
-      </form>
+    <section>
+      <!-- Content -->
+      <div class="img anim">
+        <img src="./images/gf1.png" alt="gf1" />
+        <img src="./images/gf2.png" alt="gf2" />
+      </div>
+      <div class="anim">
+        <span class="vertical-line" />
+      </div>
+      <div class="content gamefinder anim">
+        <p data-i18n="gameFinderOne"></p>
+        <p data-i18n="gameFinderTwo"></p>
+        <p data-i18n="gameFinderThree"></p>
+        <a class="link" href="https://github.com/martinpavlakovic/gamefinder"
+          ><img
+            src="./icons/github.png"
+            alt="githubLogo"
+            width="40"
+            height="40" />Github repository &#8594;</a
+        >
+      </div>
     </section>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightbox-close">&times;</button>
+      <img id="lightbox-img" src="" alt="preview" />
+    </div>
     <script src="./js/animation.js"></script>
-    <script src="./js/form.js"></script>
     <script src="./js/languageSwitch.js"></script>
+    <script src="./js/imagePreview.js"></script>
   </body>
 </html>

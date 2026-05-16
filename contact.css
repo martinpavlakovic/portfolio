@@ -8,16 +8,16 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: clamp(24px, 5.85vw, 60px);
   width: 100%;
-  max-width: 700px;
-  padding: 40px;
+  max-width: 30vw;
+  padding: clamp(18px, 3.9vw, 40px);
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--color-text);
-  animation-delay: 1.2s;
+  animation-delay: 0.5s;
   box-shadow: 0 10px 20px rgba(125, 249, 255, 0.4);
 }
 
@@ -26,11 +26,11 @@
   color: var(--color-text);
   background: rgba(255, 255, 255, 0.1);
   border: none;
-  padding: 15px;
+  padding: clamp(10px, 1.95vw, 15px);
   border:
     var(--color-text),
     1px solid;
-  color: white;
+  color: var(--color-text);
   font-family: inherit;
 }
 
@@ -63,9 +63,27 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  min-width: 60%;
   width: 40%;
   margin: auto;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: #80ef80;
+  transition: width 2s ease;
+}
+
+.btn-gradient.success::before {
+  width: 100%;
 }
 
 .contact-form .btn-gradient:hover {
@@ -74,15 +92,15 @@
 }
 
 .contact-form .group:nth-child(1) {
-  animation-delay: 0.6s;
+  animation-delay: 0.3s;
 }
 
 .contact-form .group:nth-child(2) {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 
 .contact-form .group:nth-child(3) {
-  animation-delay: 1s;
+  animation-delay: 0.9s;
 }
 
 .contact-form .group:nth-child(4) {
@@ -90,5 +108,22 @@
 }
 
 .contact-form .group:nth-child(5) {
-  animation-delay: 1.4s;
+  animation-delay: 1.5s;
+}
+
+@media (max-width: 1024px) {
+  .contact-container {
+    height: auto;
+    padding-top: 200px;
+    padding-bottom: 60px;
+    align-items: flex-start;
+  }
+
+  .contact-form {
+    max-width: 80vw;
+  }
+
+  .contact-form .btn-gradient {
+    width: 60%;
+  }
 }

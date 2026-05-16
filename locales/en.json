@@ -1,0 +1,60 @@
+{
+  "works": "WORKS",
+  "about": "ABOUT",
+  "contact": "CONTACT",
+
+  "creativeRole": "Creative Developer",
+  "roleDescription": "Crafting digital experiences with code and color.",
+  "viewProjects": "View Projects",
+
+  "aboutText": "Hello!",
+  "aboutBulletOne": "Hey, I'm Martin",
+  "aboutBulletTwo": "A 3rd year Informatics student who spends too much time playing video games",
+  "aboutBulletThree": "And just enough time turning that passion into clean, creative frontends!",
+  "projectsText": "These are my projects so",
+  "projectsLink": "Check them out",
+  "contactFormText": "Feel free to contact me via",
+  "contactFormLink": "Contact Form",
+
+  "gamefinderTitle": "GameFinder",
+  "gamefinderDesc": "My first dive in making web apps",
+
+  "auagencyTitle": "AU-Agency",
+  "auagencyDesc": "First project in university focused on UI",
+  
+  "stockupTitle": "StockUp",
+  "stockupDesc": "First project with using React",
+  
+  "portfolioTitle": "Portfolio",
+  "portfolioDescription": "Taking a shot at a portfolio",
+  
+  "getInTouch": "Get in Touch",
+  "nameLabel": "Your name",
+  "emailLabel": "Your email",
+  "descriptionLabel": "Description",
+  "sendMessage": "Send Message",
+  
+  "contactPageTitle": "CONTACT •",
+  "worksPageTitle": "WORKS •",
+  "aboutPageTitle": "ABOUT ME •",
+  "welcome": "WELCOME TO MY WEB PORTFOLIO •",
+  "gamefinderPageTitle": "GAME FINDER •",
+  "auagencyPageTitle": "AU-AGENCY •",
+  "stockupPageTitle": "STOCKUP •",
+  
+  "gameFinderOne": "This was my first ever project. Before this I learned some basic HTML, CSS and JavaScript because I thought how cool is to make web apps and then I wanted to dive into my first project right away.",
+  "gameFinderTwo": "It was also my first time ever learning anything about web, so making sense of it all was really hard, but I saw how many services like Google Firebase (that I used for this project) there are so it made it a little easier.",
+  "gameFinderThree": "All in all, I'm happy how it turned out, especially for my first project.",
+
+  "auAgencyOne": "This little work was more of a UI practice. I didn't know much about responsive design, in GameFinder project I just made everything fixed width and then made a lot of media querries to fix other sizes of screen. ",
+  "auAgencyTwo": "It was also my first time experiencing with Bootstrap and it was definitely fun to see how easy it is to use it and I was excited about what other libraries people would make because I thought that that one was really cool.",
+  "auAgencyThree": "This project wasn't something big, I just wanted to make an informative website about my favorite country.",
+
+  "stockUpOne": "At this point, I was getting into the deeper end of frontend. I started learning React and this was my go at it.",
+  "stockUpTwo": "I had this really cool idea for a project. I thought that it was really tiring going to every site of some store to search for discounts on certain ingredients and such, so I thought that I'd make a web app to have all ingredients and supplies from every store. It would also be cool to put every catalogue from every store on that site and so that the user could click on any product and immediately put it in their shopping list, therefore removing the need to manually write everything.",
+  "stockUpThree": "It was a really cool idea of mine but a bit tough to execute, but I certainly liked everything I learned about React and I knew that I definitely wanted to stick with that framework",
+
+  "portfolioOne": "Portfolio was definitely one of my more creative projects. I wanted to test how far I can take CSS and it's animations, transitions and such and I can definitely see the limitations",
+  "portfolioTwo": "After this project I fully understood responsive design and what to do and not to do, how to structure CSS properly, and honestly some more advanced CSS.",
+  "portfolioThree": "CSS is a great tool for any project but I feel like that for bigger projects, alternatives are way better, not only for the UI but for coding, debugging and structure overall."
+}

@@ -1,0 +1,30 @@
+section .img {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 50px;
+}
+
+@media (max-width: 1750px) {
+  section {
+    flex-direction: column;
+  }
+
+  .vertical-line {
+    height: 1px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section {
+    padding-top: 600px;
+  }
+
+  section .img {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .vertical-line {
+    width: clamp(300px, 71vw, 500px);
+  }
+}

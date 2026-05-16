@@ -3,30 +3,120 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./icons/cocosignIcon.png" />
 
     <title>mp | About</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav>
       <div class="left-nav">
         <span class="anim">
-          <a href="./index.html"><img src="./cocosign.png" alt="icon" /></a>
+          <a href="./index.html"
+            ><img src="./icons/cocosign.png" alt="icon"
+          /></a>
         </span>
       </div>
       <div class="right-nav">
-        <div class="right-nav">
-          <span class="anim"><a href="./projects.html">PROJECTS</a></span>
-          <span class="anim"><a href="./about.html">ABOUT</a></span>
-          <span class="anim"><a href="./contact.html">CONTACT</a></span>
-        </div>
+        <span class="anim"><a href="./works.html" data-i18n="works"></a></span>
+        <span class="anim"><a href="./about.html" data-i18n="about"></a></span>
+        <span class="anim"
+          ><a href="./contact.html" data-i18n="contact"></a
+        ></span>
+      </div>
+
+      <!-- Mobile menu -->
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="./works.html" data-i18n="works"></a>
+        <a href="./about.html" data-i18n="about"></a>
+        <a href="./contact.html" data-i18n="contact"></a>
       </div>
     </nav>
+
+    <!-- Vertical text -->
     <div class="vertical anim">
       <div class="scroll-wrapper">
-        <h1>ABOUT ME &#x2022;</h1>
+        <h1 data-i18n="aboutPageTitle">ABOUT ME &#x2022;</h1>
       </div>
     </div>
-    <script src="./animation.js"></script>
+
+    <!-- About me -->
+    <main class="container">
+      <section class="about child">
+        <div class="content">
+          <div class="marginleft">
+            <p data-i18n="aboutText"></p>
+            <ul>
+              <li data-i18n="aboutBulletOne"></li>
+              <li data-i18n="aboutBulletTwo"></li>
+              <li data-i18n="aboutBulletThree"></li>
+            </ul>
+            <a class="link" href="https://github.com/martinpavlakovic"
+              ><img
+                src="./icons/github.png"
+                alt="githubLogo"
+                width="40"
+                height="40" />Check out my Github</a
+            >
+          </div>
+        </div>
+        <div class="right"><span class="grid" /></div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects child">
+        <div class="left">
+          <span class="grid"></span>
+          <div class="image-container">
+            <a href="./gamefinder.html">
+              <img src="./images/gfmain.png" alt="gfmain" />
+            </a>
+            <a href="./auagency.html">
+              <img src="./images/aumain.png" alt="aumain" />
+            </a>
+            <a href="./stockup.html">
+              <img src="./images/sumain.png" alt="sumain" />
+            </a>
+          </div>
+        </div>
+        <div class="content">
+          <p>
+            <span data-i18n="projectsText"></span>
+            <a href="./contact.html" class="hover-link">
+              <span class="slide-text" data-i18n="projectsLink"></span>
+              <span class="slide-text" data-i18n="projectsLink"></span>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact child">
+        <div class="content">
+          <div class="upper">
+            <p>
+              <span data-i18n="contactFormText"></span>
+              <a href="./contact.html" class="hover-link">
+                <span class="slide-text" data-i18n="contactFormLink"></span>
+                <span class="slide-text" data-i18n="contactFormLink"></span>
+              </a>
+            </p>
+          </div>
+          <div class="lower">
+            <img src="./icons/signature.png" alt="signatureImg" />
+          </div>
+        </div>
+        <div class="right"><span class="grid" /></div>
+      </section>
+    </main>
+    <script src="./js/animation.js"></script>
+    <script src="./js/languageSwitch.js"></script>
   </body>
 </html>
