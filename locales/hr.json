@@ -33,6 +33,9 @@
   "emailLabel": "Tvoj Email",
   "descriptionLabel": "Opis",
   "sendMessage": "Pošalji Poruku",
+  "namePlaceholder": "Primjer: Ivan Horvat",
+  "emailPlaceholder": "Primjer: ivanhorvat@gmail.com",
+  "messagePlaceholder": "Primjer: Opišite vaš zahtjev.",
   
   "contactPageTitle": "KONTAKT •",
   "welcome": "DOBRODOŠLI U MOJ WEB PORTFOLIO •",

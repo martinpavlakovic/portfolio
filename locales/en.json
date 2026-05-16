@@ -33,6 +33,9 @@
   "emailLabel": "Your email",
   "descriptionLabel": "Description",
   "sendMessage": "Send Message",
+  "namePlaceholder": "Example: John Doe",
+  "emailPlaceholder": "Example: johndoe@gmail.com",
+  "messagePlaceholder": "Example: Please specify your request.",
   
   "contactPageTitle": "CONTACT •",
   "worksPageTitle": "WORKS •",
@@ -41,6 +44,7 @@
   "gamefinderPageTitle": "GAME FINDER •",
   "auagencyPageTitle": "AU-AGENCY •",
   "stockupPageTitle": "STOCKUP •",
+  "portfolioPageTitle": "PORTFOLIO •",
   
   "gameFinderOne": "This was my first ever project. Before this I learned some basic HTML, CSS and JavaScript because I thought how cool is to make web apps and then I wanted to dive into my first project right away.",
   "gameFinderTwo": "It was also my first time ever learning anything about web, so making sense of it all was really hard, but I saw how many services like Google Firebase (that I used for this project) there are so it made it a little easier.",

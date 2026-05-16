@@ -17,6 +17,11 @@ function applyTranslations() {
     const key = el.getAttribute('data-i18n');
     el.textContent = translations[key] ?? key;
   });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    el.setAttribute('placeholder', translations[key] ?? key);
+  });
 }
 
 function setLang(lang) {

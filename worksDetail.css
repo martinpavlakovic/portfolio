@@ -73,6 +73,7 @@ section .img img:hover {
   background-size: 100% 100%;
   -webkit-text-fill-color: transparent;
 }
+
 @media (max-width: 1750px) {
   .auagency {
     flex-direction: column;
